@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>.</title>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <a class="logo">mir</a>
+      <h1 class="title">MADE IN RUSSIA - онлайн-витрина ремесленных изделий России</h1>
+    </header>
+    <main class="content">
+      <image class="map-main" src="./svg/Map-main.svg" decoding="sync"/>
+      <button 
+          class="region  region__tula"
+          type="button" 
+          onclick="window['region-dialog'].showModal()" 
+          aria-controls="region-dialog"
+          >
+          <image class="map-tulskaya" src="./svg/Tulskaya-oblact.svg" decoding="sync"/>
+      </button>
+      <dialog class="region__dialog" id="region-dialog">
+          <div class="dialog__header">
+          <h1 class = "region__dialog-title">Тульская область</h1>
+          <button 
+          class="dialog__button-close"
+          type="button" 
+          onclick="window['region-dialog'].close()">
+          </button>
+          </div>
+          <div class="dialog__content">
+            <p class = "region__dialog-text">Тульская область славится своими ремесленными традициями. Здесь производят изделия из металла, дерева, керамики и других материалов. Особенностью Тульской области являются филигранные металлические изделия, украшенные цветной эмалью. Также в регионе развито кузнечное дело                         и производство самоваров. На онлайн-витрине можно найти широкий ассортимент товаров от тульских ремесленников, а также записаться на экскурсию по местным мастерским и фабрикам.</p>
+            <p class="region__dialog-text">видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео видео </p>
+            <button class="dialog__more" type="button">Подробнее</button>
+          </div>
+        </dialog>
+    </main>
+    <footer class="footer">
+      <div class="footer__content">
+        <p class="footer__text footer__title">Ознакомьтесь с национальными ремесленными продуктами каждого региона России на нашей онлайн-витрине</p>
+        <p class="footer__text">Смотрите видео, приобретайте уникальные товары, сделанные в России,  
+          и записывайтесь на экскурсии</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Circe';
+  src: url(.Circe-Regular.woff2) format('woff2'),
+  url(./Circe-Regular.woff) format('woff'),
+  url(./Circe-Regular.ttf) format('ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Circe';
+  src: url(./Circe-Bold.woff2) format('woff2'),
+  url(./Circe-Bold.woff) format('woff'),
+  url(./Circe-Bold.ttf) format('ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url(./Raleway-Bold.woff2) format('woff2'),
+  url(./Raleway-Bold.woff) format('woff'),
+  url(./Raleway-Bold.ttf) format('ttf');
+  font-weight: bold;
+}

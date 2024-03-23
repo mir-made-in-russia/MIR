@@ -1,0 +1,197 @@
+.page {
+  width: 100%;
+  min-width: 800px;
+  font-family: var(--font-main), sans-serif;
+  caret-color: transparent;
+}
+
+.page::-webkit-scrollbar {
+  width: 10px;
+ }
+ 
+ .page::-webkit-scrollbar-track {
+   background: var(--scrollbar-color);
+ }
+ 
+ .page::-webkit-scrollbar-thumb {
+   background: var(--scrollbar-thumb-color);
+   height: 5px;
+ }
+
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  font-family: 'Circe';
+  gap: 8px;
+}
+
+.logo {
+  font-family: var(--font-logo), sans-serif;
+  font-weight: bold;
+  font-size: 42px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.title {
+  font-weight: normal;
+  font-size: 22px;
+}
+
+.map-main {
+width: 900px;
+height: 535px;
+margin: 0 123px 0 177px;
+rotate: 15deg;
+margin-top: -52px;
+pointer-events: none;
+}
+
+.region__tula {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 260px;
+  top: 298px;
+  cursor: pointer;
+  padding: 0px;
+  caret-color: transparent;
+}
+
+.region__tula:hover::after {
+  content: 'Тульская область';
+  font-size: 16px;
+  font-weight: normal;
+  width: 140px;
+  height: 28px;
+  position: absolute;
+  background-color: white;
+  border-radius: 5px 5px 5px 0;
+  border: 1px solid var(--accent-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 15px;
+  left: 30px;
+}
+
+.map-tulskaya {
+  width: 20px;
+  height: 26px;
+  transition: transform 0.2s;
+}
+
+.region__tula:hover .map-tulskaya {
+  transform-origin: center center;
+  transform: scale(1.2);
+}
+
+.region__dialog[open] {
+  display: flex;
+  width: 800px;
+  height: 450px;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 30px 30px 50px;
+  border-radius: 20px;
+  border: 3px solid var(--accent-color);
+}
+
+.region__dialog[open]::backdrop {
+  background-color: rgb(0 0 0 / 0.3)
+}
+
+.dialog__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.region__dialog-title {
+  font-size: 28px;
+  font-weight: bold;
+  align-self: flex-end;
+}
+
+.dialog__button-close {
+  background-image: url(../svg/Close-button.svg);
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.dialog__content {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  gap: 40px;
+  padding-inline-end: 28px;
+}
+
+.dialog__content::-webkit-scrollbar {
+ width: 10px;
+}
+
+.dialog__content::-webkit-scrollbar-track {
+  background: var(--scrollbar-color);
+  border-radius: 10px;
+}
+
+.dialog__content::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-color);
+  border-radius: 10px;
+  height: 5px;
+}
+
+.region__dialog-text {
+  font-size: 18px;
+  font-weight: normal;
+  text-indent: 30px;
+}
+
+.dialog__more {
+  width: 220px;
+  height: 50px;
+  background-color: var(--accent-color);
+  padding: 9px 53px;
+  font-weight: bold;
+  font-size: 22px;
+  color: var(--main-color);
+  border-radius: 10px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.footer {
+  height: 100vh;
+  background-color: var(--accent-color);
+  margin-block-start: 116px;
+  background-image: url(../svg/City.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  padding: 110px 140px 0 140px;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer__text {
+  color: var(--main-color);
+  font-size: 26px;
+  text-align: center;
+}
+
+.footer__title {
+  font-weight: bold;
+  font-size: 32px;
+}
