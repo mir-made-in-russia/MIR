@@ -135,7 +135,7 @@ pointer-events: none;
   display: flex;
   flex-direction: column;
   overflow: auto;
-  gap: 40px;
+  gap: 20px;
   padding-inline-end: 28px;
 }
 
