@@ -98,6 +98,11 @@ pointer-events: none;
   padding: 30px 30px 30px 50px;
   border-radius: 20px;
   border: 3px solid var(--accent-color);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 .region__dialog[open]::backdrop {
