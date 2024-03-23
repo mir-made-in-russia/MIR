@@ -1,6 +1,6 @@
 .page {
   width: 100%;
-  min-width: 800px;
+  min-width: 1200px;
   font-family: var(--font-main), sans-serif;
   caret-color: transparent;
 }
